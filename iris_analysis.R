@@ -8,7 +8,7 @@ library(dplyr)
 data(iris)
 
 # Basic data exploration
-explore_iris <- function() {
+kumar_explore_iris <- function() {
   cat("Dataset Overview:\n")
   print(summary(iris))
   cat("\nDataset Structure:\n")
@@ -18,14 +18,14 @@ explore_iris <- function() {
 }
 
 # Visualization functions
-plot_sepal_comparison <- function() {
+kumar_plot_sepal_comparison <- function() {
   ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
     geom_point(size = 3) +
     labs(title = "Sepal Length vs Width by Species",
          x = "Sepal Length (cm)", y = "Sepal Width (cm)")
 }
 
-plot_petal_comparison <- function() {
+kumar_plot_petal_comparison <- function() {
   ggplot(iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +
     geom_point(size = 3) +
     labs(title = "Petal Length vs Width by Species",
@@ -33,7 +33,7 @@ plot_petal_comparison <- function() {
 }
 
 # Statistical analysis
-species_stats <- function() {
+kumar_species_stats <- function() {
   iris %>%
     group_by(Species) %>%
     summarise(
@@ -46,12 +46,12 @@ species_stats <- function() {
 }
 
 # Main analysis function
-run_iris_analysis <- function() {
-  explore_iris()
-  print(species_stats())
-  plot_sepal_comparison()
-  plot_petal_comparison()
+kumar_run_iris_analysis <- function() {
+  kumar_explore_iris()
+  print(kumar_species_stats())
+  kumar_plot_sepal_comparison()
+  kumar_plot_petal_comparison()
 }
 
 # Example usage:
-# run_iris_analysis()
+# kumar_run_iris_analysis()
