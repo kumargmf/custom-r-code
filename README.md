@@ -10,7 +10,7 @@ Simple utility function to get the top 10 values from a numeric vector.
 ```r
 source("top_ten.R")
 data <- c(1, 5, 3, 9, 2, 8, 4, 7, 6, 10, 15, 12, 11, 14, 13)
-top_ten(data)
+kumar_top_ten(data)
 ```
 
 ### 2. Iris Dataset Analysis (`iris_analysis.R`)
@@ -21,7 +21,7 @@ Comprehensive analysis of the famous iris flower dataset including:
 
 ```r
 source("iris_analysis.R")
-run_iris_analysis()
+kumar_run_iris_analysis()
 ```
 
 ## Dependencies
